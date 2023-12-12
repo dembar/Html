@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HERO</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="images/Logo.png" alt="Hero Logo">
+        <img class="title" src="images/title.png" alt="HERO">
+        <nav>
+            <ul>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="plans.html" class="nav-link">Plans</a></li>
+                <li><a href="aboutUs.html" class="nav-link">About Us</a></li>
+                <li><a href="rent.html" class="nav-link">Rent</a></li>
+                <li><a href="signin.html" class="nav-link">Sign In</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="containerForm" id="SignUP_Container">
+        <article class="form-container-signup">
+            <h1>Sign Up</h1>
+            <form action="index.html" method="POST">
+                <label for="ID">Identification:</label>
+                <input type="number" id="ID" name="ID" /*required*/>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" /*required*/>
+    
+                <label for="surname">Surname:</label>
+                <input type="text" id="surname" name="surname" /*required*/>
+    
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="4" /*required*/></textarea>
+    
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" /*required*/>
+    
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" /*required*/>
+    
+                <label>Gender:</label>
+                <ul class="gender-options">
+                    <li><input type="radio" id="male" name="gender" value="male" /*required*/>
+                    <label for="male">Male</label></li>
+    
+                    <li><input type="radio" id="female" name="gender" value="female" /*required*/>
+                    <label for="female">Female</label></li>
+    
+                    <li><input type="radio" id="noSpecific" name="gender" value="noSpecific" /*required*/>
+                    <label for="noSpecific">No Specific</label></li>
+                </ul>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" /*required*/>
+    
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" /*required*/>
+                
+                    <label>Subscription Type:</label>
+                    <ul class="subscription-options">
+                        <li><input type="radio" id="adult" name="RadioOpcion" value="adult" /*required*/>
+                        <label for="adult">Adult</label></li>
+                        <li><input type="radio" id="student" name="RadioOpcion" value="student" /*required*/>
+                        <label for="student">student</label></li>
+                        <li><input type="radio" id="elder" name="RadioOpcion" value="elder" /*required*/>
+                        <label for="elder">Elder</label></li>
+                        <li><input type="radio" id="week" name="RadioOpcion" value="week" /*required*/>
+                        <label for="week">Week</label></li>
+                        <li><input type="radio" id="day" name="RadioOpcion" value="day" /*required*/>
+                        <label for="day">Day</label></li>
+                    </ul>
+                <label for="upload">Upload Document:</label>
+                <input type="file" id="upload" name="upload" accept=".pdf, .doc, .docx">
+    
+                <div class="form-buttons">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+        </article>
+        <article class = "Planes">
+            <article class="plansAdult">
+                <h3>Adult Plan</h3>
+                <p><strong>Features:</strong></p>
+                <ul>
+                    <li>Flexible access to our diverse fleet, including e-bikes, mountain bikes, and scooters.</li>
+                    <li>Unlimited rides within the city limits.</li>
+                    <li>Priority servicing and maintenance.</li>
+                </ul>
+                <p><strong>Price:</strong> $30 per month (subscription-based)</p>
+            </article>
+            <article class="planStudent">
+                <h3>Student Plan</h3>
+                <p><strong>Features:</strong></p>
+                <ul>
+                    <li>Affordable and convenient transportation options.</li>
+                    <li>Special discounts for students.</li>
+                    <li>Access to a range of e-bikes, mountain bikes, and scooters.</li>
+                </ul>
+                <p><strong>Price:</strong> $30 per month (subscription-based)</p>
+            </article>
+            <article class="planElder">
+                <h3>Elder Plan</h3>
+                <p><strong>Features:</strong></p>
+                <ul>
+                    <li>Designed for the comfort and accessibility of the senior community.</li>
+                    <li>Priority access to specially designed e-bikes and scooters.</li>
+                    <li>Personalized assistance and support.</li>
+                </ul>
+                <p><strong>Price:</strong> $25 per month (subscription-based)</p>
+            </article>
+            <article class="planWeek">
+                <h3>Week Plan</h3>
+                <p><strong>Features:</strong></p>
+                <ul>
+                    <li>Ideal for individuals seeking extended mobility options.</li>
+                    <li>Unlimited rides throughout the week.</li>
+                    <li>Flexibility to switch between bike and scooter based on preferences.</li>
+                </ul>
+                <p><strong>Price:</strong> $10 per week</p>
+            </article>
+            <article class="planDay">
+                <h3>Day Plan</h3>
+                <p><strong>Features:</strong></p>
+                <ul>
+                    <li>Perfect for occasional users and tourists.</li>
+                    <li>24-hour access to our fleet for a day of exploration and adventure.</li>
+                    <li>No subscription required.</li>
+                </ul>
+                <p><strong>Price:</strong> $2 per day</p>
+            </article>
+        </article>
+    </section>
+    <footer>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <p>Email: info@hero.com</p>
+                <p>Phone: +1 (555) 123-4567</p>
+                <p>Address: 123 Main Street, Mississauga, ON</p>            </div>
+            <div class="business-hours">
+                <h3>Business Hours</h3>
+                <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                <p>Saturday: 10:00 AM - 4:00 PM</p>
+                <p>Sunday: Closed</p>
+            </div>
+        </div>
+        <p class="copy">&copy; 2023 Hero. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+

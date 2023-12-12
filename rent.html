@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HERO</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="images/Logo.png" alt="Hero Logo">
+        <img class="title" src="images/title.png" alt="HERO">
+        <nav>
+            <ul>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="plans.html" class="nav-link">Plans</a></li>
+                <li><a href="aboutUs.html" class="nav-link">About Us</a></li>
+                <li><a href="rent.html" class="nav-link current">Rent</a></li>
+                <li><a href="signin.html" class="nav-link">Sign In</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="containerForm">
+        <div class="form-container">
+            <h1>Rent Now</h1>
+            <form action="index.html" method="POST">
+                <label for="id">Identificacion:</label>
+                <input type="number" id="id" name="name" /*required*/>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" /*required*/>
+                <label for="surname">Surname:</label>
+                <input type="text" id="surname" name="surname" /*required*/>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" /*required*/>
+                <h2>Date start</h2>
+                <input type="date" id="dob" name="dob" /*required*/>
+                <select id="PlaceStar" name="PlaceStar[]" unique /*required*/>
+                    <option value="SquareOne">Square One</option>
+                    <option value="sherwayGardens">Sherway Gardens</option>
+                    <option value="TomkenPlaza">Tomken Plaza</option>
+                    <option value="CentralParkwayMall">CentralParkwayMall</option>
+                    <option value="rockwookdMall">Rockwookd Mall</option>
+                    <option value="SmartCentresEtobicoke">Smart Centres Etobicoke</option>
+                    <option value="SilverCreekPlaza">Silver Creek Plaza</option>
+                    <option value="MississaugaMarketplace">Mississauga Marketplace</option>
+                    <option value="MarklandWoodPlaza">Markland Wood Plaza</option>
+                </select>                
+                <h2>Date End</h2>
+                <input type="date" id="doe" name="doe" /*required*/>
+                <select id="PlaceEnd" name="PlaceEnd[]" unique /*required*/>
+                    <option value="SquareOne">Square One</option>
+                    <option value="sherwayGardens">Sherway Gardens</option>
+                    <option value="TomkenPlaza">Tomken Plaza</option>
+                    <option value="CentralParkwayMall">CentralParkwayMall</option>
+                    <option value="rockwookdMall">Rockwookd Mall</option>
+                    <option value="SmartCentresEtobicoke">Smart Centres Etobicoke</option>
+                    <option value="SilverCreekPlaza">Silver Creek Plaza</option>
+                    <option value="MississaugaMarketplace">Mississauga Marketplace</option>
+                    <option value="MarklandWoodPlaza">Markland Wood Plaza</option>
+                </select>
+                <div class="form-buttons">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <p>Email: info@hero.com</p>
+                <p>Phone: +1 (555) 123-4567</p>
+                <p>Address: 123 Main Street, Mississauga, ON</p>
+            </div>
+            <div class="business-hours">
+                <h3>Business Hours</h3>
+                <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                <p>Saturday: 10:00 AM - 4:00 PM</p>
+                <p>Sunday: Closed</p>
+            </div>
+        </div>
+        <p class="copy">&copy; 2023 Hero. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+

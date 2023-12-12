@@ -1,0 +1,237 @@
+body {
+    background-image: url(Picture11.png);
+    background-repeat: repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    font-family:'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.title{
+    align-items: center;
+    max-width: 30%;
+    margin: 20px;
+}
+header {
+    color: #fff;
+    padding: 0px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    max-width: 15%;
+    margin: 10px 20px;
+}
+nav ul {
+    list-style: none;
+}
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+.section {
+    padding: 20px;
+    margin: 20px 0;
+}
+.container {
+    width: 100%;
+    padding: 1px 0px 0 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.image-container {
+    display: flex;
+    animation: scrollImages 50s linear infinite;
+    margin-top: 10px;
+}
+
+.image-container img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+@keyframes scrollImages {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-300px * 10));
+    }
+}
+.image-cont {
+    display: flex;
+    overflow-y: auto;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+.plan {
+    margin-left: 10px;
+    background-color: aliceblue;
+    opacity: 90%;
+    border-radius: 20px;
+    padding: 1px 20px;
+}
+nav a.nav-link {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+nav a.nav-link.current {
+    color: rgb(0, 100, 139);
+    text-decoration:underline;
+}
+.form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: aliceblue;
+    opacity: 80%;
+}
+footer {
+    background-color: rgb(0, 100, 139);
+    color: #fff;
+    font-size: small;
+    text-align: left;
+    opacity: 85%;
+    margin-top: 20px;
+
+}
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    line-height: 0.3;
+}
+.copy{
+    text-align: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input, textarea, select {
+    margin-top: 5px;
+    padding: 8px;
+}
+
+.gender-options, .subscription-options {
+    display: flex;
+    margin-top: 5px;
+}
+
+.radio-options input {
+    margin-right: 5px;
+}
+
+.form-buttons {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button[type="reset"] {
+    margin-left: 10px;
+    background-color: #f44336;
+}
+
+button[type="reset"]:hover {
+    background-color: #d32f2f;
+}
+.service-plans {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.plans-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.plan {
+    flex: 0 0 auto;
+    margin-right: 20px;
+    width: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.plan img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.plan-details {
+    padding: 15px;
+    background-color: #fff;
+}
+
+.scroll-btns {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.scroll-btn {
+    font-size: 24px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    cursor: pointer;
+}
+
+.left-btn {
+    left: 10px;
+}
+
+.right-btn {
+    right: 10px;
+}
+
+
+label.scroll-btn {
+    cursor: pointer;
+    padding: 5px;
+}
+
+label.scroll-btn:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
